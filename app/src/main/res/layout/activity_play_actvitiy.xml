@@ -11,12 +11,40 @@
     app:rb_rippleAmount="5"
     app:rb_scale="7">
 
+    <TextView
+        android:id="@+id/useHeaphones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Headphones"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"/>
     <ImageView
         android:id="@+id/centerImage"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
+
         android:layout_centerInParent="true"
         android:src="@drawable/vector" />
 
+    <com.yangp.ypwaveview.YPWaveView
+        android:id="@+id/progress"
+        android:layout_width="169dp"
+        android:layout_height="199dp"
+        android:layout_below="@id/centerImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        app:animatorEnable="true"
+        app:behideColor="@color/mainColor"
+        app:borderColor="@color/mainColor"
+        app:borderWidthSize="4dp"
+        app:frontColor="#575757"
 
+        app:shapePadding="30dp"
+        app:shapeType="heart"
+        app:strong="100"
+        app:textColor="#15DF89"
+        app:textHidden="false" />
 </com.skyfishjy.library.RippleBackground>
